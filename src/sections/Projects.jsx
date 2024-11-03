@@ -5,62 +5,79 @@ import { SectionTitle } from "../ui/Typography/Typography.jsx"
 export const Projects = () => {
     return (
         <Grid background="white">
-            <div>Projects Components</div>
-            <SectionTitle>My projects</SectionTitle>
+            <SectionTitle>Featured projects</SectionTitle>
             <Card 
               imageSource="/src/assets/card1.svg"
-              borderColor="pink"
-              cardTitle="This is a project version of the card"
-              cardDescription="This is a project description"
+              borderColor="peach"
+              cardTitle="Chatbot built in javascript"
+              cardDescription="The chat bot app is a conversational 
+              AI-powered tool designed to enhance user experience by 
+              providing instant, personalized, and automated responses
+               to user inquiries."
               sectionType="projects"
             />
              <Card 
               imageSource="/src/assets/card2.svg"
-              borderColor="pink"
-              cardTitle="This is a project version of the card"
-              cardDescription="This is a project description"
+              borderColor="peach"
+              cardTitle="Weather app"
+              cardDescription="The chat bot app is a conversational 
+              AI-powered tool designed to enhance user experience by
+               providing instant, personalized, and automated responses 
+               to user inquiries."
               sectionType="projects"
             />
              <Card 
               imageSource="/src/assets/card3.svg"
-              borderColor="pink"
-              cardTitle="This is a project version of the card"
-              cardDescription="This is a project description"
+              borderColor="peach"
+              cardTitle="Guess who, the game"
+              cardDescription="The chat bot app is a conversational AI-powered 
+              tool designed to enhance user experience by providing instant, 
+              personalized, and automated responses to user inquiries."
               sectionType="projects"
             />
             <Card 
               imageSource="/src/assets/card4.svg"
-              borderColor="pink"
-              cardTitle="This is a project version of the card"
-              cardDescription="This is a project description"
+              borderColor="peach"
+              cardTitle="Music Releases"
+              cardDescription="The chat bot app is a conversational AI-powered 
+              tool designed to enhance user experience by providing instant, 
+              personalized, and automated responses to user inquiries."
               sectionType="projects"
             />
             <Card 
               imageSource="/src/assets/card5.svg"
-              borderColor="pink"
-              cardTitle="This is a project version of the card"
-              cardDescription="This is a project description"
+              borderColor="peach"
+              cardTitle="Survey"
+              cardDescription="The chat bot app is a conversational AI-powered 
+              tool designed to enhance user experience by providing instant, 
+              personalized, and automated responses to user inquiries."
               sectionType="projects"
             />
             <Card 
               imageSource="/src/assets/card6.svg"
-              borderColor="pink"
-              cardTitle="This is a project version of the card"
-              cardDescription="This is a project description"
+              borderColor="peach"
+              cardTitle="Happy Thoughts"
+              cardDescription="The chat bot app is a conversational AI-powered 
+              tool designed to enhance user experience by providing instant, 
+              personalized, and automated responses to user inquiries."
               sectionType="projects"
             />
             <Card 
               imageSource="/src/assets/card7.svg"
-              borderColor="pink"
-              cardTitle="This is a project version of the card"
-              cardDescription="This is a project description"
+              borderColor="peach"
+              cardTitle="Movies"
+              cardDescription="The chat bot app is a conversational AI-powered 
+              tool designed to enhance user experience by providing instant, 
+              personalized, and automated responses to user inquiries."
               sectionType="projects"
             />
              <Card 
               imageSource="/src/assets/card8.svg"
-              borderColor="pink"
-              cardTitle="This is a project version of the card"
-              cardDescription="This is a project description"
+              borderColor="peach"
+              cardTitle="Todo apps"
+              cardDescription="The chat bot app is a conversational AI-powered 
+              tool designed to enhance user experience by providing instant, 
+              personalized, and automated responses to user inquiries."
               sectionType="projects"
             />
         </Grid> 

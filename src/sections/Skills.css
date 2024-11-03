@@ -1,0 +1,54 @@
+.skills-section {
+    background-color: #FF7D29;
+    padding: 128px 234px;
+    text-align: center;
+    color: #FFF;
+}
+
+.skills-header {
+    font-family: 'Montserrat';
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 64px;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 32px;
+    flex-wrap: wrap; 
+}
+
+.skill-category {
+    padding: 16px;
+    border-radius: 8px;
+    color: #FFF;
+    min-width: 150px;
+    text-align: left;
+    background-color: #FF7D29; 
+}    
+
+.skill-category-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    color: #FF7D29;
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: montserrat;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-item {
+    margin: 8px 0;
+    font-size: 18px;
+    color: #FFF;
+    background-color: transparent; 
+    font-family: montserrat;
+}

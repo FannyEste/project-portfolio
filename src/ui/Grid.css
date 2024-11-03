@@ -9,10 +9,14 @@
     background: blue;
 }
 
-.pink-background {
-    background: lightcoral;
+.peach-background {
+   background: var(--color-neutral)
 }
 
 .white-background {
     background: white;
+}
+
+.orange-background {
+    background: #FF7D29;
 }
