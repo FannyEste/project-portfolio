@@ -5,6 +5,10 @@
     padding: 128px 160px;
 }
 
+.blue.background {
+    background: blue;
+}
+
 .pink-background {
     background: lightcoral;
 }

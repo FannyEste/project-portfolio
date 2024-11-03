@@ -1,13 +1,16 @@
 import "./Card.css"
 
-export const Card = () => {
+export const Card = ({ borderColor, imageSource, cardTitle, cardDescription, sectionType }) => {
     return (
-        <article>
-            <img />
+        <article className={`card ${sectionType}`}>
+            <img src={imageSource} className={`${borderColor}--border ${sectionType}`} />
             <div className="text-box">
-                <h3>Card title</h3>
-                <p>Card description</p>
+                <h3>{cardTitle}</h3>
+                <p>{cardDescription}</p>
                 <button>Button</button>
+                {sectionType ==="projects" && (
+                    <button>Button 2</button>
+                )}
             </div>
         </article>
     )

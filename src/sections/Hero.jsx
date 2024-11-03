@@ -1,3 +1,4 @@
+import { Grid } from "../ui/Grid" 
 import React from "react";
 import Header from "../components/Header"; 
 import "./Hero.css";
