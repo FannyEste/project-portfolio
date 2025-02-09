@@ -1,8 +1,7 @@
 import { Grid } from "../ui/Grid";
 import TextBox from "../components/TextBox/TextBox";
 import ProfilePicture from "../components/ProfilePicture/ProfilePicture";
-import SocialLinks from "../assets/SocialLinks.svg"; 
-import TickerTape from "../assets/TickerTapeContent.svg"; 
+import SocialLinks from "/assets/SocialLinks.svg";  
 
 export const Contact = () => {
     return (
