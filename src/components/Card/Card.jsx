@@ -1,9 +1,9 @@
 import "./Card.css";
 import TextBox from "../TextBox/TextBox"; 
 import Icon from "../Icon/Icon"; 
-import livedemoIcon from "../../assets/livedemo.svg"; 
-import githubIcon from "../../assets/github.svg";
-import docIcon from "../../assets/Doc.svg";
+import livedemoIcon from "/assets/livedemo.svg"; 
+import githubIcon from "/assets/github.svg";
+import docIcon from "/assets/Doc.svg";
 import Button from "../Button/Button";
 
 
