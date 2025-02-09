@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+:root {
+    font-family: inter, system-ui, Aveir Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+
+    /* COLORS */
+    --color-primary: #FFC288;
+    --color-secondary: #FF6701;
+    --color-neutral: #FCECDD;
+}
+
+/* 🔹 Remove Any Remaining Margins */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* ✅ Ensures full width */
+    height: 100vh; /* ✅ Ensures full height */
+    overflow-x: hidden; /* ✅ Prevents unwanted horizontal scrolling */
+}
+
+/* 🔹 Remove Padding From `main` */
+main {
+    min-height: 100vh;
+    padding: 0; /* ✅ Removes extra padding */
+}
+
+/* 🔹 Ensure Grid Sections Fill the Page */
+.grid-section {
+    min-height: 100vh;
+    width: 100%;
+}
