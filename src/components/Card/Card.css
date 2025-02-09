@@ -121,3 +121,30 @@
     border-bottom: 10px solid #FF6701;
     border-left: 10px solid #FF6701;
 }
+
+
+@media (max-width: 1024px) { /* Tablets */
+    .card {
+        grid-column: span 6;
+    }
+
+    .blog-container {
+        grid-template-columns: repeat(1, 1fr); /* Stack blog posts */
+    }
+}
+
+@media (max-width: 768px) { /* Mobile */
+    .card {
+        grid-column: span 8;
+    }
+
+    .blog-container {
+        grid-template-columns: repeat(1, 1fr); /* Full width */
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons */
+        align-items: center;
+        gap: 12px;
+    }
+}
