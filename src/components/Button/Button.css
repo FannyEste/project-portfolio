@@ -1,0 +1,36 @@
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1); /* Light grey */
+    color: black;
+    padding: 2px 24px 2px 0px; /* Adjust size */
+    text-decoration: none;
+    border-radius: 50px; /* Rounded edges */
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Darker grey on hover */
+}
+
+.button-icon {
+    margin-right: 12px; /* Space between icon and text */
+    font-size: 1.5em;
+}
+
+.blog .custom-button {
+    background-color: white !important; 
+    color: black !important;
+    padding: 0px 18px 0px 4px; /* Adjust size */
+}
+
+.blog .custom-button:hover {
+    background-color: #f4f4f4; 
+}
+.blog .svg-icon {
+    transform: scale(0.9); /* ✅ Scales the SVG down to 80% */
+    display: inline-block;
+    margin-right: 10px;
+}

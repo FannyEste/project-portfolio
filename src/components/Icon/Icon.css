@@ -1,0 +1,10 @@
+.icon {
+    background-color: black; /* 🔥 Black background */
+    color: white; /* 🔥 White text */
+    padding: 0px 8px 0px 8px; /* ✅ Wider buttons */
+    text-align: center;
+    font-weight:600;
+    display: inline-block; /* 🔥 Ensures alignment in a row */
+    min-width: fit-content; /* 🔥 Ensures width matches text */
+    margin-right: 6px; /* ✅ Less space between buttons */
+}

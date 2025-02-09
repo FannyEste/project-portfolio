@@ -1,0 +1,123 @@
+
+.card {
+    display: grid;
+    gap: 0px;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    grid-column: 1 / span 7; /* Ensures each card takes a full row */
+    margin-bottom: 88px;
+}
+
+.card-image {
+    grid-column: 1 / span 3; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    box-sizing: border-box; /* ✅ Prevents border misalignment */
+}
+
+.bordered-image {
+    max-width: 380px;
+    object-fit:cover;
+    display: block;
+    padding: -10px;
+    
+}
+
+/* 🔹 Text Content (Right Side) */
+.card-content {
+    grid-column: 4 / span 4; /* Ensures text spans the last 4 columns */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 100%;
+    justify-content: flex-start; /* 🔥 Ensures text starts at the top */
+    align-items: flex-start; /* 🔥 Aligns items to the left */
+    
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    margin: 24px 0 0 24px;
+    justify-content: flex-start;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px; 
+    margin-top: auto; 
+    margin-left: 24px; 
+    justify-content: flex-start;
+}
+
+/* Blog section */
+.blog-container {
+    grid-column: span 4;
+    display: contents; 
+}
+
+.blog-container .card {
+    grid-column: span 4; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background: transparent; 
+}
+
+/* 🔹 Ensure Images Are Uniform */
+.blog-container .card-image {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+}
+
+.blog-container .bordered-image {
+    max-width: 100%;
+    object-fit:cover;
+    display: block;
+}
+
+.blog-container .card-content {
+    flex-grow: 1; 
+    max-width: 80%; 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    
+}
+
+.blog-container .button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px; 
+    margin-top: auto; 
+    margin-left: 0px; 
+    justify-content: flex-start;
+}
+
+.date-container {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+    margin-top: 24px; /* ✅ Adds spacing before the title */
+    
+}
+
+/* Different border colors */
+
+.peach {
+    border-bottom: 10px solid #FFC288;
+    border-left: 10px solid #FFC288;
+}
+
+.orange {
+    border-bottom: 10px solid #FF6701;
+    border-left: 10px solid #FF6701;
+}
