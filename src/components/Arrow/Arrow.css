@@ -1,6 +1,6 @@
 .arrow-container {
     position: absolute; /* ✅ Anchors arrow inside `.hero-container` */
-    bottom: 20px; /* ✅ Positions arrow above the bottom */
+    bottom: 63px; /* ✅ Positions arrow above the bottom */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -9,8 +9,8 @@
 
 /* 🔹 Keep Sharp Edges */
 .arrow-container svg {
-    width: 80px;
-    height: 40px; /* ✅ Ensures a long vertical tail */
+    width: 27px;
+    height: 68px; /* ✅ Ensures a long vertical tail */
     fill: none;
     stroke: #FF7D29;
     stroke-width: 3px;

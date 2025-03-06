@@ -7,7 +7,7 @@ import Arrow from "../components/Arrow/Arrow";
 const Hero = () => (
   <div className="hero-container"> {/* Wrapper to set position */}
     <Grid background="white" sectionType="hero">
-      <TextBox text="Hi, I'm Estefanny Moran" textType="h3" sectionType="hero" />
+      <TextBox text="Hi, I’m Sara Svensson" textType="h3" sectionType="hero" />
       <TextBox text="Frontend Developer" textType="h1" sectionType="hero" />
 
       <ProfilePicture 
@@ -16,7 +16,7 @@ const Hero = () => (
       />
 
       <TextBox 
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." 
+        text="Sara is an exceptional developer known for her innovative solutions and exceptional coding abilities. She creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a valuable asset to any project and a standout in the technology field." 
         textType="p" 
         sectionType="hero" 
       />

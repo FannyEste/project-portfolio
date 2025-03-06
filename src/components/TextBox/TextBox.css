@@ -1,44 +1,58 @@
 .h1 {
-  font-size: 5.2em;
+  font-size: 80px;
   color: blue;
   font-family: 'Montserrat', sans-serif;
   grid-column: span 8;
+  
+  font-weight: 700;
+  line-height: 98px;
 }
 
 .h3 {
   grid-column: span 8;
-  font-size: 2.0em;
+  font-size: 32px;
   font-family: 'Montserrat', sans-serif;
   text-align: left;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 39px;
+  padding:0;
 }
 
 .p {
-  font-size: 1.0em;
+  font-size: 18px;
   font-family: 'Hind', sans-serif;
   justify-self: center;
   text-align: left;
+  
+  font-weight: 400;
+  line-height: 29px;
 }
 
 .h1.hero {
+  width: 1044px;
+  height: auto;
   margin: 0;
-  font-weight: bold; 
 }
 
 .h3.hero {
-  margin: 0;
+  width: 1044px;
+  height: auto;
+  margin: 0px;
 }
 
 .hero-container {
-  position: relative; /* ✅ Allows absolute positioning inside */
-  min-height: 100vh; /* ✅ Ensures full-page height */
-  width: 100%;
+  position: relative; /* already set */
+  
 }
 
 /* Paragraph Styling */
 .p.hero {
   grid-column: span 7; 
-  max-width: 95%; 
-  margin: auto auto; 
+  width: 858px; 
+  height:auto;
+  justify-self: left;
+  margin: 0;
 }
 
 /* Tech Section Heading */

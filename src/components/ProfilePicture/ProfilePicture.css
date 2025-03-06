@@ -3,11 +3,13 @@
     height: 164px; 
     border-radius: 50%; 
     grid-column: 1;
+    margin-right: 22px;
+    margin-top: 16px;
+    border-alignment: inside;
 }
 
 /* 🔹 Ensure Profile Picture has more spacing ONLY for Contact */
 .contact-info .profile-picture {
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 40px; /* ✅ Adds more space BELOW profile picture */
 }
