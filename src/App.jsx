@@ -6,8 +6,8 @@ import Hero from "./sections/Hero.jsx"
 import Skills from "./sections/Skills.jsx";
 import Tech from "./sections/Tech.jsx";
 import Contact from './sections/Contact.jsx'
+import Separator from './components/Separator/Separator'; // Import Separator
 
-// App.jsx
 const App = () => {
     return (
         <div>
@@ -15,11 +15,11 @@ const App = () => {
                 <Hero />
                 <Tech />
                 <Projects />
+                <Separator /> {/* Add the separator here */}
                 <Blog />
                 <Skills />
                 <Contact />
             </main>
-            
         </div>
     );
 };

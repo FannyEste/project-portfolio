@@ -5,9 +5,9 @@ const Button = ({ buttons = [] }) => {
     return (
         <>
             {buttons.map((button, index) => (
-                <a key={index} href={button.link} className="custom-button" target="_blank" rel="noopener noreferrer">
+                <a key={index} href={button.link} className={`custom-button ${button.className || ""}`}  target="_blank" rel="noopener noreferrer">
                     {button.icon} 
-                    <span className="p">{button.text}</span> {/* ✅ Uses `.p` from TextBox.css */}
+                    <span>{button.text}</span> 
                 </a>
             ))}
         </>

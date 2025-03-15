@@ -40,14 +40,23 @@ export const Card = ({ borderColor, imageSource, cardTitle, cardDescription, sec
                     {sectionType === "projects" ? (
                         <Button 
                             buttons={[
-                                { text: "Live demo", icon: <img src={livedemoIcon} alt="Live Demo" className="svg-icon" />, link: liveDemo },
-                                { text: "View the code", icon: <img src={githubIcon} alt="GitHub" className="svg-icon" />, link: repoLink }
+                                { 
+                                    text: "Live demo", 
+                                    icon: <img src={livedemoIcon} alt="Live Demo" className="svg-icon" />, 
+                                    link: liveDemo 
+                                },
+                                { 
+                                    text: "View the code", 
+                                    icon: <img src={githubIcon} alt="GitHub" className="svg-icon" />, 
+                                    link: repoLink,
+                                    className: "custom-button-code" // Add this custom class
+                                }
                             ]}
                         />
                     ) : (
                         <Button 
                             buttons={[
-                                { text: "Read article", icon: <img src={docIcon} alt="Read Article" className="svg-icon" />, link: "#" }
+                                { text: "Read article", icon: <img src={docIcon} alt="Read Article" className="svg-icon" /> }
                             ]}
                         />
                     )}

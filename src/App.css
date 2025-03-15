@@ -19,6 +19,8 @@
     --color-neutral: #FCECDD;
 }
 
+
+
 /* 🔹 Remove Any Remaining Margins */
 html, body {
     margin: 0;
@@ -32,67 +34,4 @@ html, body {
 main {
     min-height: 100vh;
     padding: 0; /* ✅ Removes extra padding */
-}
-
-/* 🔹 Ensure Grid Sections Fill the Page */
-.grid-section {
-    min-height: 100vh;
-    width: 100%;
-}
-
-@media (max-width: 1024px) { /* ✅ Medium Screens (Tablets) */
-    .grid-section {
-        padding: 96px 80px; /* Reduce padding */
-    }
-
-    .hero-container {
-        flex-direction: column; /* Stack elements */
-        text-align: center;
-    }
-
-    .card {
-        grid-column: span 6; /* Make cards take more space */
-    }
-
-    .skills-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns */
-        gap: 16px;
-    }
-}
-
-@media (max-width: 768px) {
-    .grid-section {
-        padding: 48px 24px; /* Reduce padding for mobile */
-        gap: 16px;
-    }
-
-    .hero-container {
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hero-container .arrow-container {
-        bottom: 10px; /* Adjust arrow position */
-    }
-
-    .card {
-        grid-column: span 8;
-    }
-
-    .skills-container {
-        grid-template-columns: repeat(1, 1fr); /* Stack all skills */
-    }
-
-    .contact-info {
-        grid-column: span 8;
-        text-align: center;
-        align-items: center;
-        padding-bottom: 32px; /* More spacing for readability */
-    }
-
-    .ticker-tape {
-        font-size: 0.9em; /* Reduce text size for smaller screens */
-        padding: 6px;
-    }
 }

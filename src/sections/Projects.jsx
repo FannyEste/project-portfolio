@@ -3,11 +3,11 @@ import { Grid } from "../ui/Grid.jsx"
 import TextBox from "../components/TextBox/TextBox";
 
 
+
 export const Projects = () => {
     return (
         <Grid background="white">
-            <TextBox text="Featured Projects" textType="h1"  />
-            
+            <TextBox text="Featured Projects" textType="h1" sectionType="projects" />
             
             <Card 
               imageSource="/assets/card1.svg"

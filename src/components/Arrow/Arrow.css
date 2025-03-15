@@ -1,17 +1,13 @@
 .arrow-container {
-    position: absolute; /* ✅ Anchors arrow inside `.hero-container` */
-    bottom: 63px; /* ✅ Positions arrow above the bottom */
-    left: 50%;
+    position: absolute; /* Anchors arrow inside `.hero-container` */
+    top: 849px; /* Positions arrow above the bottom */
+    left: 50%; /* Center horizontally within its containing block */
     transform: translateX(-50%);
-    text-align: center;
-    z-index: 10; /* ✅ Ensures arrow stays on top */
+    z-index: 10; /* Ensures arrow stays on top */
 }
 
 /* 🔹 Keep Sharp Edges */
 .arrow-container svg {
     width: 27px;
-    height: 68px; /* ✅ Ensures a long vertical tail */
-    fill: none;
-    stroke: #FF7D29;
-    stroke-width: 3px;
+    height: 68px;
 }

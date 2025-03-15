@@ -3,10 +3,11 @@
     display: grid;
     gap: 0px;
     align-items: center;
-    width: 100%;
+    width: 1044px;
+    height: 280px;
     padding: 0;
+    margin: 128px 234px 0px 234px;
     grid-column: 1 / span 7; /* Ensures each card takes a full row */
-    margin-bottom: 88px;
 }
 
 .card-image {
@@ -18,11 +19,11 @@
 }
 
 .bordered-image {
-    max-width: 380px;
+    width: 408px;
+    height: 280px;
+    margin-right:  16px;
     object-fit:cover;
-    display: block;
-    padding: -10px;
-    
+    display: block;    
 }
 
 /* 🔹 Text Content (Right Side) */
@@ -40,111 +41,90 @@
 .icon-container {
     display: flex;
     flex-direction: row;
-    margin: 24px 0 0 24px;
     justify-content: flex-start;
 }
 
 .button-container {
     display: flex;
     flex-direction: row;
-    gap: 24px; 
+    gap: 32px; 
     margin-top: auto; 
-    margin-left: 24px; 
     justify-content: flex-start;
 }
 
 /* Blog section */
 .blog-container {
-    grid-column: span 4;
-    display: contents; 
-}
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    margin: 0 234px 124px 234px; /* Apply desired padding */
+    gap: 64px;
+  }
+  
 
 .blog-container .card {
-    grid-column: span 4; 
+    grid-column: auto; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    width: 490px;
+    height: 739px;
     background: transparent; 
 }
 
 /* 🔹 Ensure Images Are Uniform */
 .blog-container .card-image {
-    width: 100%;
+    width: 490px;
     height: auto; 
+    margin: 0;
     object-fit: cover;
 }
 
 .blog-container .bordered-image {
-    max-width: 100%;
-    object-fit:cover;
+    width: 490px;
+    height: 340px;
+    margin: 0;
+    object-fit: cover;
     display: block;
 }
 
 .blog-container .card-content {
     flex-grow: 1; 
-    max-width: 80%; 
+    margin: 0px;
     display: flex;
     flex-direction: column;
     text-align: left;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 4px;
     
 }
 
 .blog-container .button-container {
     display: flex;
     flex-direction: row;
-    gap: 24px; 
-    margin-top: auto; 
-    margin-left: 0px; 
     justify-content: flex-start;
+    margin-top: 32px;
 }
 
 .date-container {
     font-weight: bold;
     font-size: 14px;
     color: black;
-    margin-top: 24px; /* ✅ Adds spacing before the title */
+    margin-top: 32px;
     
 }
 
 /* Different border colors */
 
 .peach {
-    border-bottom: 10px solid #FFC288;
-    border-left: 10px solid #FFC288;
+    border-bottom: 20px solid #FFC288;
+    border-left: 20px solid #FFC288;
 }
 
 .orange {
-    border-bottom: 10px solid #FF6701;
-    border-left: 10px solid #FF6701;
+    border-bottom: 20px solid #FF6701;
+    border-left: 20px solid #FF6701;
 }
 
 
-@media (max-width: 1024px) { /* Tablets */
-    .card {
-        grid-column: span 6;
-    }
-
-    .blog-container {
-        grid-template-columns: repeat(1, 1fr); /* Stack blog posts */
-    }
-}
-
-@media (max-width: 768px) { /* Mobile */
-    .card {
-        grid-column: span 8;
-    }
-
-    .blog-container {
-        grid-template-columns: repeat(1, 1fr); /* Full width */
-    }
-
-    .button-container {
-        flex-direction: column; /* Stack buttons */
-        align-items: center;
-        gap: 12px;
-    }
-}

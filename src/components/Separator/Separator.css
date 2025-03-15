@@ -1,0 +1,29 @@
+.separator-wrapper {
+    width: 100%;
+    position: relative; /* ✅ Keeps it inside the normal flow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    overflow: visible; /* ✅ Prevents cutting */
+}
+
+/* 🔹 Container for repeating SVGs */
+.separator-wrapper,
+.separator-container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+/* 🔹 Individual separator images */
+.separator-img {
+    width: 171.82px;
+    height: auto;
+    margin-top: 124px;
+    margin-left: -15px;
+    margin-bottom: -8px;
+    flex-shrink: 0;
+}

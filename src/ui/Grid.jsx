@@ -2,8 +2,10 @@ import "./Grid.css";
 
 export const Grid = ({ children, background, sectionType }) => {
     return (
-        <section className={`grid-section ${background}-background ${sectionType ? sectionType : ""}`}>
-            {children}
+        <section className={`${background}-background section-wrapper`}>
+            <div className={`grid-section ${sectionType ? sectionType : ""}`}>
+                {children}
+            </div>
         </section>
     );
 };
