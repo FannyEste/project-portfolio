@@ -26,35 +26,34 @@
   font-family: 'Hind', sans-serif;
   justify-self: center;
   text-align: left;
-  
   font-weight: 400;
   line-height: 29px;
 }
 
 .h1.hero {
-  width: 1044px;
-  height: auto;
-  margin: 0 0 16px 0;
+    width: 100%;
+    margin: 0 0 16px 0;
 }
 
 .h3.hero {
-  width: 1044px;
-  height: auto;
-  margin: 0px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .hero-container {
-  position: relative; /* already set */
-  
+  margin: 0 auto;
+  width: 1044px;
+  height: 980px;
 }
 
 /* Paragraph Styling */
 .p.hero {
   grid-column: span 7; 
-  width: 858px; 
+  width: 100%; 
   height: auto;
   justify-self: left;
-  margin: 0 0 0 22px;
+  margin: 0;
+  padding: 0 0 0 22px;
 }
 
 /* Tech Section Heading */
@@ -241,4 +240,80 @@ h3.skills-more {
   line-height: 38px;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
+}
+
+/* ------------------------------
+   Responsive Breakpoints
+------------------------------ */
+
+/* For screens between 1280px and 1511px */
+@media screen and (max-width: 1511px) and (min-width: 1280px) {
+  
+  .hero-container {
+    width: 958px;
+  }
+  
+}
+
+/* For screens between 744px and 1279px */
+@media screen and (max-width: 1279px) and (min-width: 744px) {
+  .h1 {
+    font-size: 56px;
+    line-height: 68px;
+    
+  }
+  
+  .h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .hero-container {
+    width: 680px;
+    height: 627px;
+  }
+
+  .h1.hero {
+    margin: 0 0 32px 0 !important;
+  }
+
+}
+
+/* For screens between 375px and 743px */
+@media screen and (max-width: 743px) {
+  
+  .hero-container {
+    width: 343px;
+    height: 720px;
+    padding: 0;
+  }
+
+  .h1 {
+    font-size: 32px;
+    line-height: 39px;
+
+  }
+  
+  .h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .h1.hero {
+    margin: 0 0 32px 0 !important;
+    padding: 0;
+  }
+
+  .h3.hero {
+    margin: 32px 0 0 0 !important;
+    padding: 0;
+  }
+
+  .p.hero {
+    padding: 0;
+    margin-bottom: 32px;
+    grid-column: span 8; 
+  }
+  
+  
 }

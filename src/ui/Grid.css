@@ -5,15 +5,16 @@
 .grid-section {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    width: 1512px;
-    min-height: 980px; /* Allows it to expand beyond 980px */
+    width: 100%;            /* Fill available space */
+    max-width: 1512px;      /* But no more than 1512px */
+    min-height: 980px;
     position: relative;
-    align-items: center; /* Align content to the top */
+    align-items: center;
     margin: 0 auto;
 }
 
 .grid-section.hero {
-    padding: 332px 234px 331px 234px;
+    padding: 332px 0 331px 0;
 }
 
 .grid-section.card {
@@ -62,3 +63,41 @@
     background: #FF7D29;
 }
 
+/* ------------------------------
+   Responsive Breakpoints
+------------------------------ */
+
+/* For screens between 1280px and 1511px */
+@media screen and (max-width: 1511px) and (min-width: 1280px) {
+  
+  
+    .grid-section.hero {
+        padding: 332px 0 331px 0;
+    }
+    
+  }
+  
+  /* For screens between 744px and 1279px */
+  @media screen and (max-width: 1279px) and (min-width: 744px) {
+    .grid-section {
+        min-height: 627px;
+    }
+    
+    .grid-section.hero {
+        padding: 128px 0 208px 0;
+    }
+  
+  }
+  
+  /* For screens between 375px and 743px */
+  @media screen and (max-width: 743px) {
+    .grid-section {
+        min-height: 720px;
+    }
+    
+    .grid-section.hero {
+        
+        padding: 64px 0 132px 0;
+    }
+  }
+  

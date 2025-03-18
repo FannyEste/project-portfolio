@@ -20,10 +20,12 @@ const Hero = () => (
         textType="p" 
         sectionType="hero" 
       />
+
+      <Arrow />
     </Grid>
 
     {/* Downward Arrow (Only inside Hero section, outside the grid) */}
-    <Arrow />
+    
   </div>
 );
 

@@ -4,6 +4,7 @@
     left: 50%; /* Center horizontally within its containing block */
     transform: translateX(-50%);
     z-index: 10; /* Ensures arrow stays on top */
+
 }
 
 /* 🔹 Keep Sharp Edges */
@@ -11,3 +12,16 @@
     width: 27px;
     height: 68px;
 }
+
+
+@media screen and (max-width: 1279px) and (min-width: 744px) {
+    .arrow-container {
+        top: 559px;
+        }
+}
+
+@media screen and (max-width: 743px) {
+    .arrow-container {
+        top: 588px;
+        }
+  }
