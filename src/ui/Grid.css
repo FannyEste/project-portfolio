@@ -17,6 +17,11 @@
     padding: 332px 0 331px 0;
 }
 
+.grid-section.tech {
+    gap: 124px;
+    padding: 0px 234px; /* Remove direct padding to avoid uneven shrink */
+  }
+
 .grid-section.card {
     grid-column: 1 / span 8;
     width: 100%;
@@ -74,6 +79,12 @@
     .grid-section.hero {
         padding: 332px 0 331px 0;
     }
+
+    .grid-section.tech {
+        width: 1280px; 
+        padding: 0 191px;
+    }
+    
     
   }
   
@@ -86,7 +97,13 @@
     .grid-section.hero {
         padding: 128px 0 208px 0;
     }
-  
+
+    .grid-section.tech {
+        min-width: 745px; 
+        height: 796px;
+        gap: 0;
+        padding: 256px 32px;
+    }
   }
   
   /* For screens between 375px and 743px */
@@ -96,8 +113,14 @@
     }
     
     .grid-section.hero {
-        
         padding: 64px 0 132px 0;
+    }
+
+    .grid-section.tech {
+        min-width: 345px; 
+        min-height: 360px !important;
+        gap: 0;
+        padding: 128px 16px;
     }
   }
   

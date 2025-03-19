@@ -58,22 +58,22 @@
 
 /* Tech Section Heading */
 .h1.tech {
-  grid-column: 1 / span 2;
+  grid-column: 1 ;
   color: white;
-  height: 98px;
-  width: 192px;
-  margin: 0 0 0 234px;
+  height: auto;
+  width: auto;
+  margin: 0;
   text-align: center;
 }
 
 .h3.tech {
-  grid-column: 3 / span 4; 
+  grid-column: 2 ; 
   color: white;
   width: 722px;
   height: auto;
   font-family: 'Hind', sans-serif;
   text-align: left;
-  margin: 0 0 0 124px;
+  margin: 0;
   align-self: center;
   
 }
@@ -252,6 +252,14 @@ h3.skills-more {
   .hero-container {
     width: 958px;
   }
+
+  .h1.tech {
+    margin: 0px;
+  }
+
+  .h3.tech {
+    width: 636px;
+  }
   
 }
 
@@ -275,6 +283,24 @@ h3.skills-more {
 
   .h1.hero {
     margin: 0 0 32px 0 !important;
+  }
+
+  .h1.tech {
+    grid-column: 4 /span 2 ;
+    width: 680px;
+    height: 68px;
+    padding: 0;
+    margin-bottom: 64px;
+  }
+
+  .h3.tech {
+    grid-column: 4 /span 2 ;
+    margin:0;
+    line-height: 38px;
+    width: 680px;
+    height: auto;
+    margin: 0 auto;   
+    text-align: center;
   }
 
 }
@@ -315,5 +341,23 @@ h3.skills-more {
     grid-column: span 8; 
   }
   
+  .h1.tech {
+    grid-column: 4 /span 2 ;
+    width: auto;
+    height: 68px;
+    margin: 0 0 64px 0;
+    
+    padding: 0px;
+  }
+
+  .h3.tech {
+    grid-column: 4 /span 2 ;
+    margin: 0;
+    width: 343px;
+    height: auto;
+    text-align: left;
+    font-size: 24px;
+    line-height: 38px;
+  }
   
 }
