@@ -39,7 +39,8 @@
 }
 
 .grid-section.blog {
-    padding: 124px 234px 124px 234px !important; /* ✅ Keeps everything contained */
+    padding: 124px 234px; /* ✅ Keeps everything contained */
+    gap: 132px;
 }
 
 /* 🔹 Ensure Skills Section Uses Its Own Layout */
@@ -95,6 +96,10 @@
         padding: 128px 12.569% 0 12.569%;
     }
     
+    .grid-section.blog{
+        width: 1280px;
+        padding: 124px 12.569%;
+    }
     
   }
   
@@ -120,6 +125,13 @@
         padding: 128px 4.297% 0 4.297%;
         gap: 64px;
     }
+
+    .grid-section.blog{
+        width: 745px;
+        padding: 124px 4.297% ;
+        gap: 64px;
+    }
+
   }
   
   /* For screens between 375px and 743px */
@@ -143,6 +155,12 @@
         min-width: 375px;
         padding: 128px 4.27% 0 4.27%;
         gap: 64px;
+    }
+
+    .grid-section.blog{
+        width: 375px;
+        gap: 64px;
+        padding: 124px 4.27% ;
     }
   }
   

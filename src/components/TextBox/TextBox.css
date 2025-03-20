@@ -100,8 +100,10 @@
 }
 
 h1.blog {
+  grid-column: 1 / span 8;
   z-index: 1;
-  margin: 124px 234px 132px 234px;
+  text-align: left;
+  margin: 0;
 }
 
 h3.blog {
@@ -261,6 +263,10 @@ h3.skills-more {
     width: 636px;
   }
   
+  .h1.blog {
+    width: 956px;
+  }
+
 }
 
 /* For screens between 744px and 1279px */
@@ -310,6 +316,14 @@ h3.skills-more {
     width: 680px;
     height: 66px;
     margin: 0 auto;
+  }
+
+  .h1.blog {
+    width: 680px;
+  }
+
+  .h3.blog {
+    width: 332px;
   }
 
 }
@@ -389,4 +403,17 @@ h3.skills-more {
     line-height: 29px;
   }
   
+  .h1.blog {
+    font-size: 56px;
+    text-align: center;
+    line-height: 68px;
+    width: 343px;
+  }
+
+  .h3.blog {
+    font-size: 24px;
+    line-height: 29px;
+    margin: 8px 0 24px 0;
+  }
+
 }
