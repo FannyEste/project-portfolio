@@ -1,13 +1,13 @@
 
 .card {
     display: grid;
-    gap: 0px;
     align-items: center;
     width: 1044px;
     height: 280px;
+    gap: 16px;
     padding: 0;
-    margin: 128px 234px 0px 234px;
-    grid-column: 1 / span 7; /* Ensures each card takes a full row */
+    margin: 0;
+    grid-column: 1 / span 8; /* Ensures each card takes a full row */
 }
 
 .card-image {
@@ -21,7 +21,6 @@
 .bordered-image {
     width: 408px;
     height: 280px;
-    margin-right:  16px;
     object-fit:cover;
     display: block;    
 }
@@ -128,3 +127,100 @@
 }
 
 
+/* ------------------------------
+   Responsive Breakpoints
+------------------------------ */
+
+/* For screens between 1280px and 1511px */
+@media screen and (max-width: 1511px) and (min-width: 1280px) {
+    .card {
+        width: 958px;
+    }    
+    
+}
+
+/* For screens between 744px and 1279px */
+@media screen and (max-width: 1279px) and (min-width: 744px) {
+    .card {
+        width: 680px;
+        gap: 37px;
+        margin: 0 auto;
+    }
+    
+    .card-image {
+        grid-column: 1 / span 3; 
+        display: flex;
+        justify-content: flex-start; 
+        align-items: center;
+        box-sizing: border-box; /* ✅ Prevents border misalignment */
+    }
+
+    .bordered-image {
+        width: 200px;
+    }
+
+    .peach {
+        border-bottom: 10px solid #FFC288;
+        border-left: 10px solid #FFC288;
+    }
+    
+    .orange {
+        border-bottom: 10px solid #FF6701;
+        border-left: 10px solid #FF6701;
+    }
+       
+}
+  
+/* For screens between 375px and 743px */
+@media screen and (max-width: 743px) {
+    .card {
+        width: 343px;
+        height: 590px;
+        display: flex;
+        flex-direction: column; /* 🔥 Stack items */
+        align-items: center;
+        gap: 24px; /* Adjust spacing */
+        margin: 0 auto;
+    }   
+
+    .card-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bordered-image {
+        width: 100%; /* Makes sure image is responsive */
+        height: 200px; /* Maintain aspect ratio */
+    }
+
+    .card-content {
+        width: 100%;
+        margin-bottom: 0; /* Remove extra space */
+        text-align: center; /* Center content */
+        align-items: center;
+    }
+
+    .icon-container {
+        width: 100%;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px; 
+        margin-top: auto; 
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .peach {
+        border-bottom: 10px solid #FFC288;
+        border-left: 10px solid #FFC288;
+    }
+    
+    .orange {
+        border-bottom: 10px solid #FF6701;
+        border-left: 10px solid #FF6701;
+    }
+}

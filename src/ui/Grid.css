@@ -22,6 +22,11 @@
     padding: 0px 234px; /* Remove direct padding to avoid uneven shrink */
   }
 
+.grid-section.projects {
+    padding: 128px 234px 0 234px;
+    gap: 128px;
+}
+
 .grid-section.card {
     grid-column: 1 / span 8;
     width: 100%;
@@ -84,6 +89,11 @@
         width: 1280px; 
         padding: 0 191px;
     }
+
+    .grid-section.projects {
+        min-width: 745px;
+        padding: 128px 12.569% 0 12.569%;
+    }
     
     
   }
@@ -104,6 +114,12 @@
         gap: 0;
         padding: 256px 32px;
     }
+
+    .grid-section.projects {
+        min-width: 745px;
+        padding: 128px 4.297% 0 4.297%;
+        gap: 64px;
+    }
   }
   
   /* For screens between 375px and 743px */
@@ -121,6 +137,12 @@
         min-height: 360px !important;
         gap: 0;
         padding: 128px 16px;
+    }
+
+    .grid-section.projects {
+        min-width: 375px;
+        padding: 128px 4.27% 0 4.27%;
+        gap: 64px;
     }
   }
   

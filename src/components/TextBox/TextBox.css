@@ -81,7 +81,7 @@
 .h1.projects {
   width: 745px;
   height: 98px;
-  margin: 128px 0 0px 234px;
+  margin: 0;
 }
 
 .h3.projects {
@@ -303,6 +303,13 @@ h3.skills-more {
     text-align: center;
   }
 
+  .h1.projects {
+    grid-column: 1 / span 8;
+    width: 680px;
+    height: 66px;
+    margin: 0 auto;
+  }
+
 }
 
 /* For screens between 375px and 743px */
@@ -358,6 +365,27 @@ h3.skills-more {
     text-align: left;
     font-size: 24px;
     line-height: 38px;
+  }
+
+  .h1.projects {
+    font-size: 56px;
+    line-height: 66px;
+    width: 343px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+
+  }
+
+  .h3.projects {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .p.projects {
+    font-size: 16px;
+    line-height: 29px;
   }
   
 }

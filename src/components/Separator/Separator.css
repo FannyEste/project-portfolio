@@ -27,3 +27,16 @@
     margin-bottom: -8px;
     flex-shrink: 0;
 }
+
+@media screen and (max-width: 1279px) and (min-width: 744px) {
+    .separator-img {
+        margin-top: 128px;
+    }
+       
+}
+
+@media screen and (max-width: 743px) {
+    .separator-img {
+        margin-top: 128px;
+    }
+}

@@ -6,7 +6,7 @@ import TextBox from "../components/TextBox/TextBox";
 
 export const Projects = () => {
     return (
-        <Grid background="white">
+        <Grid background="white" sectionType="projects">
             <TextBox text="Featured Projects" textType="h1" sectionType="projects" />
             
             <Card 
