@@ -112,7 +112,7 @@
         min-width: 745px; 
         height: 796px;
         gap: 0;
-        padding: 256px 32px;
+        padding: 256px 4.297%;
     }
 
     .grid-section.projects {
@@ -136,7 +136,7 @@
         min-width: 345px; 
         min-height: 360px !important;
         gap: 0;
-        padding: 128px 16px;
+        padding: 128px 4.27%;
     }
 
     .grid-section.projects {
