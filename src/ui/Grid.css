@@ -53,10 +53,16 @@
 }
 
 .grid-section.contact {
-    
-    height: 1053px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 1053px !important;
+    box-sizing: border-box; /* ✅ Ensure consistent spacing */
+    padding: 128px 234px; /* Standard padding */
+    margin: 0 auto;
+    gap: 128px;
 }
-
 /* Background Colors */
 .blue-background {
     background: blue;
@@ -100,6 +106,11 @@
         width: 1280px;
         padding: 124px 12.569%;
     }
+
+    .grid-section.contact {
+        padding: 128px 161px 128px 162px; 
+        min-height: 1057px !important;
+    }
     
   }
   
@@ -129,6 +140,12 @@
     .grid-section.blog{
         width: 745px;
         padding: 124px 4.297% ;
+        gap: 64px;
+    }
+
+    .grid-section.contact {
+        padding: 128px 32px; 
+        min-height: 929px !important;
         gap: 64px;
     }
 
@@ -166,6 +183,12 @@
         box-sizing: border-box; /* 🔥 critical */
         margin: 0 auto; /* center the whole section */
         gap: 64px;
+    }
+
+    .grid-section.contact {
+        padding: 128px 16px; 
+        gap: 64px;
+        min-height: 1043px !important;
     }
   }
   

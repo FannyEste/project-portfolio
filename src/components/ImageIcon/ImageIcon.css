@@ -3,7 +3,6 @@
     justify-content: center; /* Centers the icons horizontally */
     align-items: center; /* Centers vertically (if needed) */
     gap: 32px; /* Adds spacing between each icon */
-    margin: 64px 0 128px 0; /* Optional: Adjust top margin if needed */
 }
 
 .image-icon {
