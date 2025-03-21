@@ -219,7 +219,8 @@
 /* For screens between 375px and 743px */
 @media screen and (max-width: 743px) {
     .card {
-        width: 343px;
+        width: 100%; /* ✅ Full width of its container */
+        max-width: 343px; /* ✅ Optional cap */
         height: 590px;
         display: flex;
         flex-direction: column; /* 🔥 Stack items */
@@ -241,6 +242,7 @@
 
     .card-content {
         width: 100%;
+        max-width: 343px;
         margin-bottom: 0; /* Remove extra space */
         text-align: center; /* Center content */
         align-items: center;
@@ -271,7 +273,8 @@
 
     .blog-container {
         display: grid;
-        width: 343px;
+        width: 100%;
+        max-width: 375px;
         grid-template-columns: repeat(1, 1fr); /* Two columns */
         margin: 0; 
         gap: 64px !important;
@@ -282,8 +285,9 @@
     }
 
     .blog-container .card {
-        width: 680px;
-        height: 584px;
+        width: 100%; /* ✅ Full width of its container */
+        max-width: 343px; /* ✅ Optional cap */
+        height: auto;
     }
 
     .blog-container .bordered-image {

@@ -267,6 +267,11 @@ h3.skills-more {
     width: 956px;
   }
 
+  .skills-container {
+    width: 958px;
+    margin: 0 161px 128px 161px;
+  }
+
 }
 
 /* For screens between 744px and 1279px */
@@ -325,6 +330,53 @@ h3.skills-more {
   .h3.blog {
     width: 332px;
   }
+
+  .h1.skills {
+    margin: 128px 32px 64px 32px;
+  }
+
+  .skills-container {
+    display: grid;
+    grid-template-columns: auto auto; /* Allows independent column sizing */
+    gap: 64px;
+    justify-content: center;
+    width: 680px;
+    margin: 0 auto 148px auto;
+  }
+
+  .skills-column {
+    width: auto; /* Allows each column to expand naturally */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* First row */
+  .skills-column:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .skills-column:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /* Second row */
+  .skills-column:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2; /* Moves this column to the second row */
+    margin-left: -7px;
+  }
+
+  .skills-column:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2; /* Moves this column to the second row */
+    margin-left: -23px;
+  }
+
+  
 
 }
 
@@ -415,5 +467,52 @@ h3.skills-more {
     line-height: 29px;
     margin: 8px 0 24px 0;
   }
+
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px; /* Matches your Figma spacing */
+    align-items: center; /* Centers all content */
+    justify-content: center;
+    width: 100%;
+    max-width: 343px; /* Ensures proper width */
+    margin: 0 auto 157px auto;
+  }
+
+  .skills-column {
+    width: 100%;
+    max-width: 343px; /* Ensure it matches container */
+    text-align: center; /* Centers text */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers inside */
+  }
+
+  .h1.skills {
+    font-size: 56px;
+    line-height: 68px;
+    margin: 128px 16px 64px 16px;
+  }
+
+  h3.skills-code {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  h3.toolbox{
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  h3.upcomming {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  h3.more {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  
 
 }

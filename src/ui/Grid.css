@@ -152,15 +152,20 @@
     }
 
     .grid-section.projects {
-        min-width: 375px;
-        padding: 128px 4.27% 0 4.27%;
+        width: 100%;
+        padding: 124px 16px 0 16px; /* exact version of 4.27% */
+        box-sizing: border-box; /* 🔥 critical */
+        margin: 0 auto; /* center the whole section */
         gap: 64px;
     }
 
     .grid-section.blog{
-        width: 375px;
+        width: 100%;
+        max-width: 375px;
+        padding: 124px 16px 128px 16px; /* exact version of 4.27% */
+        box-sizing: border-box; /* 🔥 critical */
+        margin: 0 auto; /* center the whole section */
         gap: 64px;
-        padding: 124px 4.27% ;
     }
   }
   
