@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .h1 {
   font-size: 80px;
   color: blue;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   grid-column: span 8;
   font-weight: 700;
   line-height: 98px;
@@ -13,7 +13,7 @@
 .h3 {
   grid-column: span 8;
   font-size: 32px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: left;
   font-weight: 600;
   font-style: normal;
@@ -23,7 +23,7 @@
 
 .p {
   font-size: 18px;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   justify-self: center;
   text-align: left;
   font-weight: 400;
@@ -31,8 +31,8 @@
 }
 
 .h1.hero {
-    width: 100%;
-    margin: 0 0 16px 0;
+  width: 100%;
+  margin: 0 0 16px 0;
 }
 
 .h3.hero {
@@ -48,8 +48,8 @@
 
 /* Paragraph Styling */
 .p.hero {
-  grid-column: span 7; 
-  width: 100%; 
+  grid-column: span 7;
+  width: 100%;
   height: auto;
   justify-self: left;
   margin: 0;
@@ -58,7 +58,7 @@
 
 /* Tech Section Heading */
 .h1.tech {
-  grid-column: 1 ;
+  grid-column: 1;
   color: white;
   height: auto;
   width: auto;
@@ -67,15 +67,14 @@
 }
 
 .h3.tech {
-  grid-column: 2 ; 
+  grid-column: 2;
   color: white;
   width: 722px;
   height: auto;
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", sans-serif;
   text-align: left;
   margin: 0;
   align-self: center;
-  
 }
 
 .h1.projects {
@@ -114,16 +113,16 @@ h3.blog {
 }
 
 p.blog {
-  margin: 0px; 
+  margin: 0px;
 }
 
 h1.skills {
   margin: 128px 234px 128px 234px;
-  color: white; 
+  color: white;
 }
 
 p.skills {
-  color: white; 
+  color: white;
   margin: 0;
   width: auto;
   height: auto;
@@ -138,13 +137,21 @@ p.skills {
 }
 
 /* 🔹 Ensure Each Column is Placed Correctly in Grid */
-.skills-column:nth-child(1) { grid-column: 1 ; }
-.skills-column:nth-child(2) { grid-column: 3 ; }
-.skills-column:nth-child(3) { grid-column: 5 ; }
-.skills-column:nth-child(4) { grid-column: 7 ; } 
+.skills-column:nth-child(1) {
+  grid-column: 1;
+}
+.skills-column:nth-child(2) {
+  grid-column: 3;
+}
+.skills-column:nth-child(3) {
+  grid-column: 5;
+}
+.skills-column:nth-child(4) {
+  grid-column: 7;
+}
 
 h3.skills-code {
-  background-color: #EB5577;
+  background-color: #eb5577;
   color: white;
   padding: 2px;
   margin: 0 0 16px 0;
@@ -152,7 +159,7 @@ h3.skills-code {
 }
 
 h3.skills-toolbox {
-  background-color: #2483E0;
+  background-color: #2483e0;
   color: white;
   padding: 2px;
   margin: 0 0 16px 0;
@@ -160,7 +167,7 @@ h3.skills-toolbox {
 }
 
 h3.skills-upcoming {
-  background-color: #6DB486;
+  background-color: #6db486;
   color: white;
   font-weight: 600;
   padding: 2px;
@@ -169,7 +176,7 @@ h3.skills-upcoming {
 }
 
 h3.skills-more {
-  background-color: #FFDE30;
+  background-color: #ffde30;
   color: blue;
   font-weight: 600;
   padding: 2px;
@@ -192,7 +199,7 @@ h3.skills-more {
 /* 🔹 Center "Let's talk" */
 .h1.contact {
   grid-column: 1 / span 8;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   justify-self: center;
   align-self: center;
@@ -200,8 +207,7 @@ h3.skills-more {
 }
 
 .h3.contact {
-  margin: 0 0 8px 0; 
-  
+  margin: 0 0 8px 0;
 }
 
 /* 🔹 Profile Section Centering */
@@ -217,22 +223,21 @@ h3.skills-more {
 }
 
 .social-links {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-    justify-content: center;
-    margin: 56px 0 0 0 ;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  margin: 56px 0 0 0;
 }
-
 
 .ticker-tape {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 100vw;             /* Force full viewport width */
-  margin-left: -50vw;       /* Pull it back to align with the viewport */
+  width: 100vw; /* Force full viewport width */
+  margin-left: -50vw; /* Pull it back to align with the viewport */
   height: 114px;
-  background-color: #FF6584;
+  background-color: #ff6584;
   color: white;
   padding: 41px 0 35px 13px;
   text-align: left;
@@ -247,7 +252,7 @@ h3.skills-more {
   font-size: 26px;
   line-height: 38px;
   font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ------------------------------
@@ -256,7 +261,6 @@ h3.skills-more {
 
 /* For screens between 1280px and 1511px */
 @media screen and (max-width: 1511px) and (min-width: 1280px) {
-  
   .hero-container {
     width: 958px;
   }
@@ -272,7 +276,7 @@ h3.skills-more {
   .h1.projects {
     max-width: 956px;
   }
-  
+
   .h1.blog {
     width: 956px;
   }
@@ -285,7 +289,6 @@ h3.skills-more {
   .ticker-tape {
     margin-bottom: 4px;
   }
-
 }
 
 /* For screens between 744px and 1279px */
@@ -293,9 +296,8 @@ h3.skills-more {
   .h1 {
     font-size: 56px;
     line-height: 68px;
-    
   }
-  
+
   .h3 {
     font-size: 24px;
     line-height: 29px;
@@ -311,7 +313,7 @@ h3.skills-more {
   }
 
   .h1.tech {
-    grid-column: 1 /span 8 ;
+    grid-column: 1 / span 8;
     width: 680px;
     height: 68px;
     padding: 0;
@@ -321,12 +323,12 @@ h3.skills-more {
   }
 
   .h3.tech {
-    grid-column: 1 /span 8 ;
-    margin:0;
+    grid-column: 1 / span 8;
+    margin: 0;
     line-height: 38px;
     width: 680px;
     height: auto;
-    margin: 0 auto;   
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -389,14 +391,10 @@ h3.skills-more {
     grid-row: 2; /* Moves this column to the second row */
     margin-left: -23px;
   }
-
-  
-
 }
 
 /* For screens between 375px and 743px */
 @media screen and (max-width: 743px) {
-  
   .hero-container {
     width: 343px;
     height: 720px;
@@ -406,9 +404,8 @@ h3.skills-more {
   .h1 {
     font-size: 32px;
     line-height: 39px;
-
   }
-  
+
   .h3 {
     font-size: 18px;
     line-height: 22px;
@@ -427,11 +424,11 @@ h3.skills-more {
   .p.hero {
     padding: 0;
     margin-bottom: 32px;
-    grid-column: span 8; 
+    grid-column: span 8;
   }
-  
+
   .h1.tech {
-    grid-column: 1 /span 8 ;
+    grid-column: 1 / span 8;
     width: auto;
     height: 68px;
     margin: 0 auto 64px auto;
@@ -439,7 +436,7 @@ h3.skills-more {
   }
 
   .h3.tech {
-    grid-column: 1 /span 8 ;
+    grid-column: 1 / span 8;
     margin: 0 auto;
     width: 343px;
     height: auto;
@@ -457,7 +454,6 @@ h3.skills-more {
     text-align: center;
     margin: 0 auto;
     padding: 0;
-
   }
 
   .h3.projects {
@@ -469,7 +465,7 @@ h3.skills-more {
     font-size: 16px;
     line-height: 29px;
   }
-  
+
   .h1.blog {
     font-size: 56px;
     text-align: center;
@@ -514,7 +510,7 @@ h3.skills-more {
     line-height: 29px;
   }
 
-  h3.toolbox{
+  h3.toolbox {
     font-size: 24px;
     line-height: 29px;
   }
@@ -528,7 +524,7 @@ h3.skills-more {
     font-size: 24px;
     line-height: 29px;
   }
-  
+
   .h1.contact {
     font-size: 56px;
     line-height: 68px;
@@ -538,5 +534,4 @@ h3.skills-more {
     font-size: 24px;
     line-height: 29px;
   }
-
 }

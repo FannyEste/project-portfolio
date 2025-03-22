@@ -1,134 +1,128 @@
-
 .card {
-    display: grid;
-    align-items: center;
-    width: 100%;
-    max-width: 1044px;
-    height: 280px;
-    gap: 16px;
-    padding: 0;
-    margin: 0 auto;
-    grid-column: 1 / span 8; /* Ensures each card takes a full row */
+  display: grid;
+  align-items: center;
+  width: 100%;
+  max-width: 1044px;
+  height: 280px;
+  gap: 16px;
+  padding: 0;
+  margin: 0 auto;
+  grid-column: 1 / span 8; /* Ensures each card takes a full row */
 }
 
 .card-image {
-    grid-column: 1 / span 3; 
-    display: flex;
-    justify-content: flex-start; 
-    align-items: center;
-    box-sizing: border-box; /* ✅ Prevents border misalignment */
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box; /* ✅ Prevents border misalignment */
 }
 
 .bordered-image {
-    width: 408px;
-    height: 280px;
-    object-fit:cover;
-    display: block;    
+  width: 408px;
+  height: 280px;
+  object-fit: cover;
+  display: block;
 }
 
 /* 🔹 Text Content (Right Side) */
 .card-content {
-    grid-column: 4 / span 4; /* Ensures text spans the last 4 columns */
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    height: 100%;
-    justify-content: flex-start; /* 🔥 Ensures text starts at the top */
-    align-items: flex-start; /* 🔥 Aligns items to the left */
-    
+  grid-column: 4 / span 4; /* Ensures text spans the last 4 columns */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 100%;
+  justify-content: flex-start; /* 🔥 Ensures text starts at the top */
+  align-items: flex-start; /* 🔥 Aligns items to the left */
 }
 
 .icon-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .button-container {
-    display: flex;
-    flex-direction: row;
-    gap: 32px; 
-    margin-top: auto; 
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-top: auto;
+  justify-content: flex-start;
 }
 
 /* Blog section */
 .blog-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    margin: 0 auto 124px auto; /* Apply desired padding */
-    gap: 64px !important;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  margin: 0 auto 124px auto; /* Apply desired padding */
+  gap: 64px !important;
+}
 
 .blog-container .card {
-    grid-column: auto; 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0;
-    padding: 0;
-    gap: 0;
-    width: 490px;
-    height: 739px;
-    background: transparent; 
+  grid-column: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  width: 490px;
+  height: 739px;
+  background: transparent;
 }
 
 /* 🔹 Ensure Images Are Uniform */
 .blog-container .card-image {
-    width: 490px;
-    height: 340px; 
-    margin: 0;
-    object-fit: cover;
+  width: 490px;
+  height: 340px;
+  margin: 0;
+  object-fit: cover;
 }
 
 .blog-container .bordered-image {
-    width: 490px;
-    height: 340px;
-    margin: 0;
-    object-fit: cover;
-    align-self: stretch;
-    display: block;
+  width: 490px;
+  height: 340px;
+  margin: 0;
+  object-fit: cover;
+  align-self: stretch;
+  display: block;
 }
 
 .blog-container .card-content {
-    flex-grow: 1; 
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: flex-start;
-    align-items: flex-start;
-    
+  flex-grow: 1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .blog-container .button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 32px;
 }
 
 .date-container {
-    font-weight: bold;
-    font-size: 14px;
-    color: black;
-    margin: 32px 0 0 0;
-    
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+  margin: 32px 0 0 0;
 }
 
 /* Different border colors */
 
 .peach {
-    border-bottom: 20px solid #FFC288;
-    border-left: 20px solid #FFC288;
+  border-bottom: 20px solid #ffc288;
+  border-left: 20px solid #ffc288;
 }
 
 .orange {
-    border-bottom: 20px solid #FF6701;
-    border-left: 20px solid #FF6701;
+  border-bottom: 20px solid #ff6701;
+  border-left: 20px solid #ff6701;
 }
-
 
 /* ------------------------------
    Responsive Breakpoints
@@ -136,176 +130,173 @@
 
 /* For screens between 1280px and 1511px */
 @media screen and (max-width: 1511px) and (min-width: 1280px) {
-    .card {
-        max-width: 958px;
-    }  
-    
-    .blog-container {
-        width: 958px;
-    }
-    
-    .blog-container .card-content {
-        width: 447px;
-    }
+  .card {
+    max-width: 958px;
+  }
 
-    .blog-container .card {
-        width: 447px;
-    }
+  .blog-container {
+    width: 958px;
+  }
 
-    .blog-container .bordered-image {
-        width: 447px;
-    }
-    .blog-container .card-image {
-        width: 447px;
-    }
+  .blog-container .card-content {
+    width: 447px;
+  }
 
+  .blog-container .card {
+    width: 447px;
+  }
+
+  .blog-container .bordered-image {
+    width: 447px;
+  }
+  .blog-container .card-image {
+    width: 447px;
+  }
 }
 
 /* For screens between 744px and 1279px */
 @media screen and (max-width: 1279px) and (min-width: 744px) {
-    .card {
-        width: 680px;
-        gap: 37px;
-        margin: 0 auto;
-    }
-    
-    .card-image {
-        grid-column: 1 / span 3; 
-        display: flex;
-        justify-content: flex-start; 
-        align-items: center;
-        box-sizing: border-box; /* ✅ Prevents border misalignment */
-    }
+  .card {
+    width: 680px;
+    gap: 37px;
+    margin: 0 auto;
+  }
 
-    .bordered-image {
-        width: 200px;
-    }
+  .card-image {
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box; /* ✅ Prevents border misalignment */
+  }
 
-    .peach {
-        border-bottom: 10px solid #FFC288;
-        border-left: 10px solid #FFC288;
-    }
-    
-    .orange {
-        border-bottom: 10px solid #FF6701;
-        border-left: 10px solid #FF6701;
-    }
+  .bordered-image {
+    width: 200px;
+  }
 
-    .blog-container {
-        display: grid;
-        width: 680px;
-        grid-template-columns: repeat(1, 1fr); /* Two columns */
-        margin: 0; /* Apply desired padding */
-        gap: 64px !important;
-      }
+  .peach {
+    border-bottom: 10px solid #ffc288;
+    border-left: 10px solid #ffc288;
+  }
 
-    .blog-container .card-content {
-        width: 680px;
-    }
+  .orange {
+    border-bottom: 10px solid #ff6701;
+    border-left: 10px solid #ff6701;
+  }
 
-    .blog-container .card {
-        width: 680px;
-        height: 661px;
-    }
+  .blog-container {
+    display: grid;
+    width: 680px;
+    grid-template-columns: repeat(1, 1fr); /* Two columns */
+    margin: 0; /* Apply desired padding */
+    gap: 64px !important;
+  }
 
-    .blog-container .bordered-image {
-        width: 680px;
-    }
-    .blog-container .card-image {
-        width: 680px;
-    }
-       
+  .blog-container .card-content {
+    width: 680px;
+  }
+
+  .blog-container .card {
+    width: 680px;
+    height: 661px;
+  }
+
+  .blog-container .bordered-image {
+    width: 680px;
+  }
+  .blog-container .card-image {
+    width: 680px;
+  }
 }
-  
+
 /* For screens between 375px and 743px */
 @media screen and (max-width: 743px) {
-    .card {
-        width: 100%; /* ✅ Full width of its container */
-        max-width: 343px; /* ✅ Optional cap */
-        height: 590px;
-        display: flex;
-        flex-direction: column; /* 🔥 Stack items */
-        align-items: center;
-        gap: 24px; /* Adjust spacing */
-        margin: 0 auto;
-    }   
+  .card {
+    width: 100%; /* ✅ Full width of its container */
+    max-width: 343px; /* ✅ Optional cap */
+    height: 590px;
+    display: flex;
+    flex-direction: column; /* 🔥 Stack items */
+    align-items: center;
+    gap: 24px; /* Adjust spacing */
+    margin: 0 auto;
+  }
 
-    .card-image {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+  .card-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
-    .bordered-image {
-        width: 100%; /* Makes sure image is responsive */
-        height: 200px; /* Maintain aspect ratio */
-    }
+  .bordered-image {
+    width: 100%; /* Makes sure image is responsive */
+    height: 200px; /* Maintain aspect ratio */
+  }
 
-    .card-content {
-        width: 100%;
-        max-width: 343px;
-        margin-bottom: 0; /* Remove extra space */
-        text-align: center; /* Center content */
-        align-items: center;
-    }
+  .card-content {
+    width: 100%;
+    max-width: 343px;
+    margin-bottom: 0; /* Remove extra space */
+    text-align: center; /* Center content */
+    align-items: center;
+  }
 
-    .icon-container {
-        width: 100%;
-    }
+  .icon-container {
+    width: 100%;
+  }
 
-    .button-container {
-        display: flex;
-        flex-direction: column;
-        gap: 16px; 
-        margin-top: auto; 
-        justify-content: flex-start;
-        width: 100%;
-    }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: auto;
+    justify-content: flex-start;
+    width: 100%;
+  }
 
-    .peach {
-        border-bottom: 10px solid #FFC288;
-        border-left: 10px solid #FFC288;
-    }
-    
-    .orange {
-        border-bottom: 10px solid #FF6701;
-        border-left: 10px solid #FF6701;
-    }
+  .peach {
+    border-bottom: 10px solid #ffc288;
+    border-left: 10px solid #ffc288;
+  }
 
-    .blog-container {
-        display: grid;
-        width: 100%;
-        max-width: 375px;
-        grid-template-columns: repeat(1, 1fr); /* Two columns */
-        margin: 0; 
-        gap: 64px !important;
-      }
+  .orange {
+    border-bottom: 10px solid #ff6701;
+    border-left: 10px solid #ff6701;
+  }
 
-    .blog-container .card-content {
-        width: 343px;
-    }
+  .blog-container {
+    display: grid;
+    width: 100%;
+    max-width: 375px;
+    grid-template-columns: repeat(1, 1fr); /* Two columns */
+    margin: 0;
+    gap: 64px !important;
+  }
 
-    .blog-container .card {
-        width: 100%; /* ✅ Full width of its container */
-        max-width: 343px; /* ✅ Optional cap */
-        height: auto;
-    }
+  .blog-container .card-content {
+    width: 343px;
+  }
 
-    .blog-container .bordered-image {
-        width: 343px;
-        height: 200px;
-    }
-    .blog-container .card-image {
-        width: 343px;
-        height: 200px;
-    }
+  .blog-container .card {
+    width: 100%; /* ✅ Full width of its container */
+    max-width: 343px; /* ✅ Optional cap */
+    height: auto;
+  }
 
-    .date-container {
-        margin: 24px 0 0 0;
-        
-    }
+  .blog-container .bordered-image {
+    width: 343px;
+    height: 200px;
+  }
+  .blog-container .card-image {
+    width: 343px;
+    height: 200px;
+  }
 
-    .blog-container .button-container {
-        margin-top: 24px;
-    }
+  .date-container {
+    margin: 24px 0 0 0;
+  }
+
+  .blog-container .button-container {
+    margin-top: 24px;
+  }
 }

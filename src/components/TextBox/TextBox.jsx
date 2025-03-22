@@ -1,5 +1,5 @@
 import "./TextBox.css";
-import React from 'react';
+import React from "react";
 
 const TextBox = ({ text, textType = "p", sectionType }) => {
   const className = `${textType} ${sectionType ? `${sectionType}` : ""}`.trim();
@@ -20,7 +20,9 @@ const TextBox = ({ text, textType = "p", sectionType }) => {
         </ul>
       );
     } else {
-      console.warn("Expected an array for 'text' prop when 'textType' is 'list'");
+      console.warn(
+        "Expected an array for 'text' prop when 'textType' is 'list'",
+      );
       return null;
     }
   }
@@ -29,4 +31,3 @@ const TextBox = ({ text, textType = "p", sectionType }) => {
 };
 
 export default TextBox;
-

@@ -1,27 +1,25 @@
 .arrow-container {
-    position: absolute; /* Anchors arrow inside `.hero-container` */
-    top: 849px; /* Positions arrow above the bottom */
-    left: 50%; /* Center horizontally within its containing block */
-    transform: translateX(-50%);
-    z-index: 10; /* Ensures arrow stays on top */
-
+  position: absolute; /* Anchors arrow inside `.hero-container` */
+  top: 849px; /* Positions arrow above the bottom */
+  left: 50%; /* Center horizontally within its containing block */
+  transform: translateX(-50%);
+  z-index: 10; /* Ensures arrow stays on top */
 }
 
 /* 🔹 Keep Sharp Edges */
 .arrow-container svg {
-    width: 27px;
-    height: 68px;
+  width: 27px;
+  height: 68px;
 }
 
-
 @media screen and (max-width: 1279px) and (min-width: 744px) {
-    .arrow-container {
-        top: 559px;
-        }
+  .arrow-container {
+    top: 559px;
+  }
 }
 
 @media screen and (max-width: 743px) {
-    .arrow-container {
-        top: 588px;
-        }
+  .arrow-container {
+    top: 588px;
   }
+}

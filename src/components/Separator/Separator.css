@@ -1,42 +1,41 @@
 .separator-wrapper {
-    width: 100%;
-    position: relative; /* ✅ Keeps it inside the normal flow */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-    overflow: visible; /* ✅ Prevents cutting */
+  width: 100%;
+  position: relative; /* ✅ Keeps it inside the normal flow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  overflow: visible; /* ✅ Prevents cutting */
 }
 
 /* 🔹 Container for repeating SVGs */
 .separator-wrapper,
 .separator-container {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 /* 🔹 Individual separator images */
 .separator-img {
-    width: 171.82px;
-    height: auto;
-    margin-top: 124px;
-    margin-left: -15px;
-    margin-bottom: -8px;
-    flex-shrink: 0;
+  width: 171.82px;
+  height: auto;
+  margin-top: 124px;
+  margin-left: -15px;
+  margin-bottom: -8px;
+  flex-shrink: 0;
 }
 
 @media screen and (max-width: 1279px) and (min-width: 744px) {
-    .separator-img {
-        margin-top: 128px;
-    }
-       
+  .separator-img {
+    margin-top: 128px;
+  }
 }
 
 @media screen and (max-width: 743px) {
-    .separator-img {
-        margin-top: 128px;
-    }
+  .separator-img {
+    margin-top: 128px;
+  }
 }

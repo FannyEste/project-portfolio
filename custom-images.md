@@ -44,7 +44,9 @@ export const GithubRepos = () => {
 useEffect(() => {
   const fetchRepos = async () => {
     try {
-      const response = await fetch("https://api.github.com/users/YourGithubProfile/repos");
+      const response = await fetch(
+        "https://api.github.com/users/YourGithubProfile/repos",
+      );
       if (!response.ok) {
         throw new Error("Network response was not ok" + response.statusText);
       }
@@ -53,7 +55,7 @@ useEffect(() => {
     } catch (error) {
       console.error(
         "There has been a problem with your fetch operation:",
-        error
+        error,
       );
     }
   };

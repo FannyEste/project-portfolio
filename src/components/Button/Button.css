@@ -1,66 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .custom-button {
-    display: flex;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.1); 
-    color: black;
-    padding-right: 16px;
-    border-radius: 40px; /* Rounded edges */
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 600;
-    font-style: normal;
-    letter-spacing: 0px;
-    width: fit-content;
-    transition: background 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  padding-right: 16px;
+  border-radius: 40px; /* Rounded edges */
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0px;
+  width: fit-content;
+  transition: background 0.3s ease-in-out;
 }
 
 .custom-button .svg-icon {
-    margin-right: 7px; /* Adjusted spacing */
+  margin-right: 7px; /* Adjusted spacing */
 }
 
 .custom-button:hover .svg-icon {
-    filter: brightness(0) invert(1); /* Inverts colors, turning black to white */
+  filter: brightness(0) invert(1); /* Inverts colors, turning black to white */
 }
 
 .custom-button:hover {
-    background-color: #0b24f5 !important; 
-    color: white !important;
+  background-color: #0b24f5 !important;
+  color: white !important;
 }
 
 .blog .custom-button a {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 .blog .custom-button {
-    background-color: white !important; 
-    color: black !important;
+  background-color: white !important;
+  color: black !important;
 }
 
 .blog .custom-button:hover {
-    background-color: #ffd338 !important; 
-    color: rgb(0, 0, 0) !important;
+  background-color: #ffd338 !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .blog .custom-button:hover .svg-icon {
-    filter: none; /* Inverts colors, turning black to white */
+  filter: none; /* Inverts colors, turning black to white */
 }
 
 /* Default state */
 .custom-button-code {
-    background-color: rgba(0, 0, 0, 0.1); 
-    color: black;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 /* Hover effect for "View the Code" button */
 .custom-button-code:hover {
-    background-color: #EB5577 !important;
-    color: white !important;
+  background-color: #eb5577 !important;
+  color: white !important;
 }
 
 /* Ensure the SVG icon also turns white */
 .custom-button-code:hover .svg-icon {
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }

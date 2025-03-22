@@ -1,24 +1,19 @@
 .profile-picture {
-    width: 164px; 
-    height: 164px; 
-    border-radius: 50%; 
-    grid-column: 1;
-    
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
+  grid-column: 1;
 }
 
 /* 🔹 Ensure Profile Picture has more spacing ONLY for Contact */
 .contact-info .profile-picture {
-    border-radius: 50%;
-    margin: 0 0 64px 0;
+  border-radius: 50%;
+  margin: 0 0 64px 0;
 }
 
-
 @media screen and (max-width: 743px) {
-   .profile-picture {
-      order: -1; /* Moves it to the top */
-      grid-column: 4 /span 2;
-      
-    }
+  .profile-picture {
+    order: -1; /* Moves it to the top */
+    grid-column: 4 / span 2;
   }
-
-  
+}
