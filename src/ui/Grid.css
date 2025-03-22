@@ -5,8 +5,8 @@
 .grid-section {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    width: 100%;            /* Fill available space */
-    max-width: 1512px;      /* But no more than 1512px */
+    width: 100%;
+    max-width: 1512px; 
     min-height: 980px;
     position: relative;
     align-items: center;
@@ -19,33 +19,40 @@
 
 .grid-section.tech {
     gap: 124px;
-    padding: 0px 234px; /* Remove direct padding to avoid uneven shrink */
+    padding: 0px 234px; 
   }
 
 .grid-section.projects {
+    width: 100%;
+    max-width: 1512px;
+    box-sizing: border-box; 
     padding: 128px 234px 0 234px;
+    margin: 0 auto;
     gap: 128px;
 }
 
 .grid-section.card {
     grid-column: 1 / span 8;
     width: 100%;
-    height: auto; /* Allow it to expand */
+    height: auto;
     display: flex;
-    flex-wrap: wrap; /* Ensures cards flow properly */
-    gap: 16px; /* Space between cards */
+    flex-wrap: wrap;
+    gap: 16px; 
     padding-left: 0;
-    overflow: visible; /* Ensures no hidden content */
+    overflow: visible; 
 }
 
 .grid-section.blog {
-    padding: 124px 234px; /* ✅ Keeps everything contained */
+    width: 100%;
+    max-width: 1512px;
+    box-sizing: border-box; 
+    padding: 124px 234px 128px 234px;
+    margin: 0 auto;
     gap: 132px;
 }
 
-/* 🔹 Ensure Skills Section Uses Its Own Layout */
 .grid-section.skills {
-    display: flex; /* ✅ Prevents `display: grid` from breaking layout */
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -58,8 +65,8 @@
     align-items: center;
     justify-content: flex-start;
     min-height: 1053px !important;
-    box-sizing: border-box; /* ✅ Ensure consistent spacing */
-    padding: 128px 234px; /* Standard padding */
+    box-sizing: border-box;
+    padding: 128px 234px; 
     margin: 0 auto;
     gap: 128px;
 }
@@ -98,13 +105,14 @@
     }
 
     .grid-section.projects {
-        min-width: 745px;
-        padding: 128px 12.569% 0 12.569%;
+        padding: 128px 161px 0 161px;
+        box-sizing: border-box;
     }
     
     .grid-section.blog{
         width: 1280px;
-        padding: 124px 12.569%;
+        padding: 124px 161px 128px 161px;
+        box-sizing: border-box;
     }
 
     .grid-section.contact {
@@ -132,14 +140,14 @@
     }
 
     .grid-section.projects {
-        min-width: 745px;
-        padding: 128px 4.297% 0 4.297%;
+        padding: 128px 32px 0 32px;
+        box-sizing: border-box;
         gap: 64px;
     }
 
     .grid-section.blog{
         width: 745px;
-        padding: 124px 4.297% ;
+        padding: 128px 32px;
         gap: 64px;
     }
 
@@ -169,19 +177,23 @@
     }
 
     .grid-section.projects {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        padding: 124px 16px 0 16px; /* exact version of 4.27% */
-        box-sizing: border-box; /* 🔥 critical */
-        margin: 0 auto; /* center the whole section */
+        min-width: 375px;
+        margin: 0 auto;
+        padding: 124px 16px 0 16px;
+        box-sizing: border-box;
         gap: 64px;
-    }
+      }
 
     .grid-section.blog{
         width: 100%;
         max-width: 375px;
-        padding: 124px 16px 128px 16px; /* exact version of 4.27% */
-        box-sizing: border-box; /* 🔥 critical */
-        margin: 0 auto; /* center the whole section */
+        padding: 128px 16px; 
+        box-sizing: border-box; 
+        margin: 0 auto; 
         gap: 64px;
     }
 

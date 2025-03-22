@@ -79,9 +79,10 @@
 }
 
 .h1.projects {
-  width: 745px;
-  height: 98px;
-  margin: 0;
+  width: 100%; /* ✅ Full width of its grid column */
+  max-width: 1044px; /* ✅ Matches the card container */
+  margin: 0 auto 0 auto; /* ✅ Centers it properly */
+  text-align: left; /* ✅ Ensures text starts from the correct position */
 }
 
 .h3.projects {
@@ -267,6 +268,10 @@ h3.skills-more {
   .h3.tech {
     width: 636px;
   }
+
+  .h1.projects {
+    max-width: 956px;
+  }
   
   .h1.blog {
     width: 956px;
@@ -446,7 +451,8 @@ h3.skills-more {
   .h1.projects {
     font-size: 56px;
     line-height: 66px;
-    width: 343px;
+    width: 100%;
+    max-width: 343px;
     height: auto;
     text-align: center;
     margin: 0 auto;

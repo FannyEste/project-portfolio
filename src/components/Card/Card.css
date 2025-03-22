@@ -2,11 +2,12 @@
 .card {
     display: grid;
     align-items: center;
-    width: 1044px;
+    width: 100%;
+    max-width: 1044px;
     height: 280px;
     gap: 16px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     grid-column: 1 / span 8; /* Ensures each card takes a full row */
 }
 
@@ -55,7 +56,7 @@
 .blog-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns */
-    margin: 0 auto 124px auto0; /* Apply desired padding */
+    margin: 0 auto 124px auto; /* Apply desired padding */
     gap: 64px !important;
   }
   
@@ -136,7 +137,7 @@
 /* For screens between 1280px and 1511px */
 @media screen and (max-width: 1511px) and (min-width: 1280px) {
     .card {
-        width: 958px;
+        max-width: 958px;
     }  
     
     .blog-container {
